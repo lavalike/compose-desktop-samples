@@ -16,6 +16,8 @@ fun App() {
     MaterialTheme {
         Row {
             SidebarComposable()
+            ChatListComposable()
+            ChatAreaComposable()
         }
     }
 }

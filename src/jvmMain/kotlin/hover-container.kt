@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun HoverContainer(
-    enterColor: Color = Color(COLOR_PANEL),
+    enterColor: Color = Color(COLOR_PANEL_DARK),
     exitColor: Color = Color.Transparent,
     shape: Shape = RoundedCornerShape(10.dp),
     padding: PaddingValues = PaddingValues(),
