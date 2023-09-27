@@ -12,7 +12,6 @@ import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -26,7 +25,6 @@ import androidx.compose.ui.unit.dp
  * @author : zhen51.wang
  * @date : 2023/9/26/026
  */
-@OptIn(ExperimentalComposeUiApi::class)
 @Preview
 @Composable
 fun SidebarComposable() {
@@ -72,12 +70,9 @@ fun SidebarComposable() {
                     modifier = Modifier.fillMaxWidth().aspectRatio(1f).padding(8.dp)
                 )
             }
-        }
 
-        Column(
-            modifier = Modifier.fillMaxWidth().align(Alignment.BottomCenter),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
+            Spacer(modifier = Modifier.weight(1f))
+
             HoverContainer(onClick = {
 
             }) {
