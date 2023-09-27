@@ -27,8 +27,8 @@ fun main() = application {
         icon = icon,
         title = "Compose Desktop",
         state = rememberWindowState(
-            width = 1080.dp,
-            height = 700.dp,
+            width = 1280.dp,
+            height = 800.dp,
             position = WindowPosition(alignment = Alignment.Center)
         )
     ) {
